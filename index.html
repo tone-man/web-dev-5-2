@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 5.2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Accessing Elements</h1>
+
+    <p> 
+        Access the button element using DOM address with `document.forms[0].elements[0]`.
+    </p>
+    <p>
+        Count the number of checked checkboxes in the topGroup form when pushMe is clicked.
+    </p>
+    <h2> Basic Form </h2>
+    <form name="myForm" action=" ">
+        <button type="button" name="pushMe" onclick="onClick()" > Push Me </button>
+    </form>
+
+    <h2> Checkboxes</h2>
+    <form name="topGroup">
+        <input type="checkbox" name="toppings" value="box1">
+        <input type="checkbox" name="toppings" value="box2">
+        <input type="checkbox" name="toppings" value="box3">
+    </form>
+
+    <p name="output">The number of checked boxes is:<div id="numChecked"></div></p>
+    
+</body>
+    <script src="index.js"></script>
+</html>
